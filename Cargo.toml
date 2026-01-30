@@ -1,0 +1,59 @@
+[package]
+name = "notify-manager-rs"
+version = "0.1.0"
+edition = "2021"
+description = "A multi-channel notification library for Rust"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/jiangcuo/notify-manager-rs"
+keywords = ["notification", "dingtalk", "webhook", "email", "alert"]
+categories = ["web-programming", "asynchronous"]
+
+[dependencies]
+tokio = { version = "1", features = ["rt-multi-thread", "macros", "time"] }
+async-trait = "0.1"
+reqwest = { version = "0.12", default-features = false, features = ["json", "rustls-tls"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+thiserror = "2"
+tracing = "0.1"
+futures = "0.3"
+
+hmac = "0.12"
+sha2 = "0.10"
+base64 = "0.22"
+urlencoding = "2.1"
+
+lettre = { version = "0.11", default-features = false, features = ["tokio1-rustls-tls", "smtp-transport", "pool", "hostname", "builder"] }
+
+[dev-dependencies]
+tokio = { version = "1", features = ["full"] }
+wiremock = "0.6"
+tracing-subscriber = "0.3"
+serde = { version = "1", features = ["derive"] }
+
+[[example]]
+name = "basic"
+
+[[example]]
+name = "dingtalk_native"
+
+[[example]]
+name = "webhook"
+
+[[example]]
+name = "email"
+
+[[example]]
+name = "feishu"
+
+[[example]]
+name = "wecom"
+
+[[example]]
+name = "slack"
+
+[[example]]
+name = "discord"
+
+[[example]]
+name = "telegram"
