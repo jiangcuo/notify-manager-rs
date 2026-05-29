@@ -97,5 +97,6 @@ pub use channel::discord;
 pub use channel::telegram;
 
 // 通用渠道
-pub use channel::webhook;
 pub use channel::email;
+pub use channel::sms;
+pub use channel::webhook;

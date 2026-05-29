@@ -78,10 +78,11 @@ pub mod feishu;
 pub mod wecom;
 
 // 国际渠道
-pub mod slack;
 pub mod discord;
+pub mod slack;
 pub mod telegram;
 
 // 通用渠道
-pub mod webhook;
 pub mod email;
+pub mod sms;
+pub mod webhook;
