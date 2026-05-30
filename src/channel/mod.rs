@@ -15,6 +15,7 @@
 //! ## 通用渠道
 //! - `webhook` - 通用 Webhook
 //! - `email` - SMTP 邮件
+//! - `sms::aliyun` - 阿里云短信
 
 use async_trait::async_trait;
 

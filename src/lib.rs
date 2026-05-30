@@ -73,6 +73,7 @@
 //! | `telegram` | Telegram Bot |
 //! | `webhook` | 通用 Webhook |
 //! | `email` | SMTP 邮件 |
+//! | `sms::aliyun` | 阿里云短信 |
 
 // 模块声明
 mod channel;

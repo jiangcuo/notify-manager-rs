@@ -20,6 +20,7 @@ futures = "0.3"
 
 hmac = "0.12"
 sha2 = "0.10"
+sha1 = "0.10"
 base64 = "0.22"
 urlencoding = "2.1"
 
@@ -57,3 +58,6 @@ name = "discord"
 
 [[example]]
 name = "telegram"
+
+[[example]]
+name = "sms_aliyun"
